@@ -6,6 +6,10 @@ body {
   color: #fff;
 }
 
+.dis{
+  display: none;
+}
+
 .wrapper {
   width: 400px;
   margin: 40px auto;

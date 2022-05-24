@@ -7,6 +7,7 @@ async function gotomyform() {
   }
 
 
+
 	let user = Moralis.User.current();
 	console.log("logged in user:", user);
 let forms;
@@ -40,7 +41,7 @@ for (var i = 0; i < titlearray.length; i++) {
       </div>
     </div>` + fetch ; 
     var bgimg = document.getElementById(`cards${i}`);
-    bgimg.style.backgroundImage = `url('img/bg1.png')`;
+    bgimg.style.backgroundImage = `url('https://source.unsplash.com/collection/9948714?sig=${i+20}')`;
 } 
 
 
@@ -54,3 +55,7 @@ for (var i = 0; i < titlearray.length; i++) {
 
 
 document.getElementById("myforms").onclick = gotomyform;
+// document.getElementById("home").onclick = gotohome;
+// document.getElementById("myforms").onclick = gotomyform;
+// document.getElementById("myforms").onclick = gotomyform;
+// document.getElementById("myforms").onclick = gotomyform;

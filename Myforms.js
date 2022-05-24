@@ -38,12 +38,12 @@ for (var i = 0; i < titlearray.length; i++) {
       <div class="box-content">
         <h2 class="text">${titlearray[i]}</h2>
 
-        <a class="showmore" href="http://127.0.0.1:5500/SaveResponses.html?fname=${titlearray[i]}">Save Responses</a>
+        <a class="showmore" style="font-size:14px" href="http://127.0.0.1:5500/SaveResponses.html?fname=${titlearray[i]}">Save Responses</a>
    
             </div>
     </div>` + fetch ; 
     var bgimg = document.getElementById(`cards${i}`);
-    bgimg.style.backgroundImage = `url('img/bg1.png')`;
+    bgimg.style.backgroundImage = `url('https://source.unsplash.com/collection/9948714?sig=${i+20}')`;
 } 
 
 

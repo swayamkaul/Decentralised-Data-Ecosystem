@@ -2,6 +2,18 @@
  Moralis.initialize("QlQdSuTFLiORNu22CoR27JyvJZL7tnakoKZFmciz");
  Moralis.serverURL = "https://uwnhukqwmmyp.usemoralis.com:2053/server";
 
+
+
+ let user = Moralis.User.current();
+ console.log(user)
+if (user) {
+  document.getElementById('btn-login').setAttribute('class','dis')
+  document.getElementById('btn-logout').setAttribute('class','btn')
+} else {
+  document.getElementById('btn-logout').setAttribute('class','dis')
+  document.getElementById('btn-login').setAttribute('class','btn')
+
+}
  // add from here down
  async function login() {
    let user = Moralis.User.current();
@@ -32,6 +44,7 @@
 
  async function logOut() {
    await Moralis.User.logOut();
+   window.location.reload()
    console.log("logged out");
    
  }
