@@ -1,6 +1,6 @@
  // connect to Moralis server
- Moralis.initialize("XQPj9l82uCibyLNJ9M5bSqeGgDZJtNT64yFTuOpN");
- Moralis.serverURL = "https://hxxjnjhma417.moralishost.com:2053/server";
+ Moralis.initialize("QlQdSuTFLiORNu22CoR27JyvJZL7tnakoKZFmciz");
+ Moralis.serverURL = "https://uwnhukqwmmyp.usemoralis.com:2053/server";
 
  // add from here down
  async function login() {
@@ -13,7 +13,7 @@
      var age = document.getElementById("age").value;
      user.set("username",fName);
      user.set("Age",age);
-    //  user.set("lName",lname);
+      // user.set("lName",lname);
       user.save();
    }
    console.log("logged in user:", user);
@@ -33,6 +33,7 @@
  async function logOut() {
    await Moralis.User.logOut();
    console.log("logged out");
+   
  }
 
  document.getElementById("btn-login").onclick = login;

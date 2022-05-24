@@ -1,5 +1,5 @@
-Moralis.initialize("XQPj9l82uCibyLNJ9M5bSqeGgDZJtNT64yFTuOpN");
-Moralis.serverURL = "https://hxxjnjhma417.moralishost.com:2053/server";
+Moralis.initialize("QlQdSuTFLiORNu22CoR27JyvJZL7tnakoKZFmciz");
+Moralis.serverURL = "https://uwnhukqwmmyp.usemoralis.com:2053/server";
 
 
 async function gotomyform() {
