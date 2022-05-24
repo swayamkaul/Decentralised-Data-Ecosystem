@@ -1,25 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;700&display=swap");
 
 body {
-  background-color: #f0f5ff;
-  font-family: 'Jost',sans-serif;
+  background-color: rgb(172, 188, 237);
+  font-family: "Jost", sans-serif;
   color: #fff;
 }
 
-.dis{
+.dis {
   display: none;
 }
 
 .wrapper {
-  width: 400px;
+  width: 35%;
+  height: 70vh;
   margin: 40px auto;
-  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   border-radius: 5px;
-  background: white;
-  box-shadow: 0px 10px 40px 0px rgba(47,47,47,.1);
+  background: #f0f5ff;
+  box-shadow: 0px 10px 40px 0px rgba(47, 47, 47, 0.1);
 }
 
-input[type="text"]{
+.head {
+  font-size: 40px;
+  color: white;
+}
+
+.wrapper > h3 {
+  font-size: 30px;
+}
+
+label {
+  font-size: 14px;
+  color: black;
+}
+
+input[type="text"] {
   padding: 10px;
   margin: 10px auto;
   display: block;
@@ -34,13 +52,38 @@ input[type="text"]:focus {
   outline: none;
 }
 
-.but{
+.login {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.but1{
+.right {
+  background-image: url("./img/bg6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 65%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right > p {
+  color: white;
+  font-size: 20px;
+}
+
+.but {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.but1 {
   width: 85%;
   margin: 0 auto;
   display: flex;
@@ -48,10 +91,10 @@ input[type="text"]:focus {
   align-items: center;
 }
 
-.btn{
+.btn {
   margin-top: 0.75rem;
-  background-color: #f0f5ff !important;
-  color: black !important;
+  background-color: rgb(172, 188, 237) !important;
+  color: white !important;
   padding: 0.5rem;
   width: 30%;
   border: none;
