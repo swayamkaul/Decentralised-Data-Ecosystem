@@ -1,33 +1,95 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <!-- Moralis SDK -->
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
     <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
-  <title>Survey Dapp</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <!-- include font awesome -->
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-</head>
-<body>
-
-  <h1>New Form</h1>
-  <div class="wrapper">
-    <div id="survey_options">
-      <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="Title">
-      <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="Question1">
-      <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="Question2">
+    <title>Survey Dapp</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
+    <link rel="stylesheet" type="text/css" href="create.css" />
+    <!-- include font awesome -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="form" id="survey_options">
+      <div class="title-div">
+        <h1>NEW FORM</h1>
+        <p>This is a google form.</p>
+        <p class="required">*Required</p>
+      </div>
+      <div class="name-div">
+        <div class="name">
+          What is your Title?<span class="required">*</span>
+        </div>
+        <div class="input-div">
+          <input
+            type="text"
+            name="survey_options[]"
+            placeholder="Your answer"
+          />
+        </div>
+      </div>
+      <div class="name-div">
+        <div class="name">Question1<span class="required">*</span></div>
+        <div class="input-div">
+          <input
+            type="text"
+            name="survey_options[]"
+            placeholder="Your answer"
+          />
+        </div>
+      </div>
+      <div class="name-div">
+        <div class="name">Question2<span class="required">*</span></div>
+        <div class="input-div">
+          <input
+            type="text"
+            name="survey_options[]"
+            placeholder="Your answer"
+          />
+        </div>
+      </div>
+      <!-- <div id="survey_options">
+        <input
+          type="text"
+          name="survey_options[]"
+          class="survey_options"
+          size="50"
+          placeholder="Title"
+        />
+        <input
+          type="text"
+          name="survey_options[]"
+          class="survey_options"
+          size="50"
+          placeholder="Question1"
+        />
+        <input
+          type="text"
+          name="survey_options[]"
+          class="survey_options"
+          size="50"
+          placeholder="Question2"
+        />
+      </div> -->
     </div>
-    <div class="controls">
-      <a href="#" id="add_more_fields"><i class="fa fa-plus"></i><span style="margin-left: 0.5vw">Add Question</span></a>
-      <a href="#" id="remove_fields"><i class="fa fa-plus"></i><span style="margin-left: 0.5vw">Remove Question</span></a>
+    <div class="controls form">
+      <a id="add_more_fields"
+        ><i class="fa fa-plus"></i
+        ><span style="margin-left: 0.5vw">Add Question</span></a
+      >
+      <a style="margin-left: 0.75vw" id="remove_fields"
+        ><i class="fa fa-plus"></i
+        ><span style="margin-left: 0.5vw">Remove Question</span></a
+      >
       <div class="but">
-      	<button id="submit" class="btn">Submit</button>
+        <button id="submit" class="btn">Submit</button>
       </div>
     </div>
-    
-  </div>
-<script src="CreateForm.js"></script>
-</body>
+    <script src="CreateForm.js"></script>
+  </body>
 </html>
